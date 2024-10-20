@@ -24,6 +24,7 @@ class CSVMatcherApp:
         self.name_label = ttk.Label(entry_frame, text="Name:")
         self.name_label.grid(row=0, column=0, padx=5, pady=5, sticky="e")
         self.name_entry = ttk.Entry(entry_frame)
+        self.name_entry.focus_set()
         self.name_entry.grid(row=0, column=1, padx=5, pady=5)
         self.name_entry.bind('<Return>', lambda event: self.on_enter(event, self.lotno_entry))
 
